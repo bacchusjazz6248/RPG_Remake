@@ -2,6 +2,8 @@
 using UnityStandardAssets.CrossPlatformInput;
 
 [RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(PlayerStatus))]
+[RequireComponent(typeof(MobAttack))]
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Animator animator;
@@ -10,10 +12,9 @@ public class PlayerController : MonoBehaviour
     private CharacterController _characterController; // CharacterControllerのキャッシュ
     private Transform _transform; // Transformのキャッシュ
     private Vector3 _moveVelocity; // キャラの移動速度情報
+    private PlayerStatus _status;
+    private MobAttack _attack;
 
-    /// <summary>
-    /// 接地判定処理
-    /// </summary>
     private bool IsGrounded
     {
         get
@@ -29,16 +30,31 @@ public class PlayerController : MonoBehaviour
     {
         _characterController = GetComponent<CharacterController>(); 
         _transform = transform; 
+        _status = GetComponent<PlayerStatus>();
+        _attack = GetComponent<MobAttack>();
     }
 
     private void Update()
     {
         Debug.Log(IsGrounded ? "地上" : "空中");
 
-        _moveVelocity.x = CrossPlatformInputManager.GetAxis("Horizontal") * moveSpeed;
-        _moveVelocity.z = CrossPlatformInputManager.GetAxis("Vertical") * moveSpeed;
+        if (CrossPlatformInputManager.GetButtonDown("Fire1"))
+        {
+            _attack.AttackIfPossible();
+        }
 
-        _transform.LookAt(_transform.position + new Vector3(_moveVelocity.x, 0, _moveVelocity.z));
+        if (_status.IsMovable)
+        {
+            _moveVelocity.x = CrossPlatformInputManager.GetAxis("Horizontal") * moveSpeed;
+            _moveVelocity.z = CrossPlatformInputManager.GetAxis("Vertical") * moveSpeed;
+
+            _transform.LookAt(_transform.position + new Vector3(_moveVelocity.x, 0, _moveVelocity.z));
+        }
+        else
+        {
+            _moveVelocity.x = 0;
+            _moveVelocity.z = 0;
+        }
 
         if (IsGrounded)
         {
