@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 0
-  m_FollowOffset: {x: 0, y: 5, z: -10}
+  m_FollowOffset: {x: 0, y: 4, z: -9}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -860,8 +860,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.22975291, y: -0.000000018722758, z: 0.0000000044200714, w: 0.973249}
-  m_LocalPosition: {x: 5.88, y: 5, z: -5.49}
+  m_LocalRotation: {x: 0.20759144, y: 4.814825e-13, z: -9.559905e-13, w: 0.9782156}
+  m_LocalPosition: {x: 5.88, y: 4, z: -4.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1619,6 +1619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec358edf42c1e984eb91128fe5b6f4c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1975330729}
   moveSpeed: 3
   jumpPower: 3
 --- !u!143 &1494299171
@@ -1810,8 +1811,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1620558028}
-  m_LocalRotation: {x: 0.22975291, y: -0.000000018722758, z: 0.0000000044200714, w: 0.973249}
-  m_LocalPosition: {x: 5.88, y: 5, z: -5.49}
+  m_LocalRotation: {x: 0.20759144, y: 4.814825e-13, z: -9.559905e-13, w: 0.9782156}
+  m_LocalPosition: {x: 5.88, y: 4, z: -4.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 236668779}
@@ -1931,7 +1932,7 @@ Animator:
   m_GameObject: {fileID: 1975330728}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 5ab4204da8011b04e93cf3efb61105e3, type: 3}
-  m_Controller: {fileID: 9100000, guid: c2bb141f960294c13836233ab2092b75, type: 2}
+  m_Controller: {fileID: 9100000, guid: 099948c3445e61e40bcdefd61cb26ba3, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1

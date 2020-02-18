@@ -4,6 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private Animator animator;
     [SerializeField] private float moveSpeed = 3; // 移動速度
     [SerializeField] private float jumpPower = 3; // ジャンプ力
     private CharacterController _characterController; // CharacterControllerのキャッシュ
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         _characterController = GetComponent<CharacterController>(); 
-        _transform = transform;
+        _transform = transform; 
     }
 
     private void Update()
@@ -43,18 +44,16 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump"))
             {
-                // ジャンプ処理
-                Debug.Log("ジャンプ");
-                _moveVelocity.y = jumpPower;
+                _moveVelocity.y = jumpPower; 
             }
         }
         else
         {
-            // 重力による加速
             _moveVelocity.y += Physics.gravity.y * Time.deltaTime;
         }
 
-        // オブジェクトを動かす
         _characterController.Move(_moveVelocity * Time.deltaTime);
+
+        animator.SetFloat("MoveSpeed", new Vector3(_moveVelocity.x, 0, _moveVelocity.z).magnitude);
     }
 }
