@@ -4,7 +4,6 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyMove : MonoBehaviour
 {
-    [SerializeField] private PlayerController _playerController;
     private NavMeshAgent _agent;
 
     private void Start()
@@ -12,8 +11,11 @@ public class EnemyMove : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
     }
 
-    private void Update()
+    public void OnDetectObject(Collider collider)
     {
-        _agent.destination = _playerController.transform.position;
+        if (collider.CompareTag("Player"))
+        {
+            _agent.destination = collider.transform.position;
+        }
     }
 }
