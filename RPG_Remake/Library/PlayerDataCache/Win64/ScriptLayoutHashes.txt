@@ -367,3 +367,5 @@ dd223b2cbb523615eee8980d99d61ddd Assembly-CSharp.dll:.EnvMapAnimator
 36ed8d92a07a53bf383bc90e377cc388 Assembly-CSharp-firstpass.dll:UnityStandardAssets._2D.PlatformerCharacter2D
 94a07dfb3507bbc3ab4841ae8579f19b Assembly-CSharp.dll:.PlayerController
 695c9335429d4798b6f74ca73c042ff4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
+9ad6a45d3dc29220a147d2eb200670b6 Assembly-CSharp.dll:.LifeGaugeContainer
+e85f6675553617e8b4019e38f35af5da Assembly-CSharp.dll:.LifeGauge
