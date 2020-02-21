@@ -4,6 +4,7 @@ C:/Users/bacch/Documents/MyGame/RPG_Remake.exe
 SceneListBegin?
 Assets/Scenes/TitleScene.unity
 Assets/Scenes/PlayScene.unity
+Assets/Scenes/GameoverScene.unity
 SceneListEnd?
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.LevelReset
 8ef0c7ee81abe4b89a27b3a0d1ce3b03 Cinemachine.dll:Cinemachine.CinemachineStateDrivenCamera
@@ -74,8 +75,10 @@ a44114bd4fa541174f78b4bb92bacb48 UnityEngine.UI.dll:UnityEngine.EventSystems.Sta
 e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 2d58ca16854b99daea8c45e9c0f367b7 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 16da51d1b62ef6d4ee1849350434023b UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+7f1eb46cfaf0744f61b439a823b36046 Assembly-CSharp.dll:UnityTemplateProjects.SimpleCameraController
 50b0b141074b216c8b53b1bd467f73c9 Unity.TextMeshPro.dll:TMPro.TMP_InputField
 b827b25f832158fdaa480c476121350e Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TiltInput
+f5812a95d8974ec466d743b3c93fa1be Assembly-CSharp.dll:.ItemsDialog
 c902e31672e5f721a2b8055d8b6fe2f3 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.WaterBase
 53cefe5d98cadefbab750835e70b89c0 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 486cd95c82d8305219c352c06b776e1f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -174,7 +177,9 @@ a3c4f6168fdec1e9debee096e97ab787 Assembly-CSharp.dll:TMPro.Examples.TMP_TextEven
 34d219cdf8a72aef75c203b036a85318 Assembly-CSharp.dll:TMPro.Examples.Benchmark01
 fa1c317e7807ba3c9b05056693f277ff Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.Joystick
 99eeac81a1aceb285089376a418e338d Cinemachine.dll:Cinemachine.CinemachinePOV
+7b6b1e1f7b8053d9be9ebda073b458b6 Assembly-CSharp.dll:.ItemButton
 4ea8d9566bdcd2e6d7cf97aef45ed480 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.PlatformSpecificContent
+4f169b183601b2fe5bc407805fa88c95 Assembly-CSharp.dll:.Item
 4bd2ce0ce7ea9374f663549b0ba0aa06 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter
 96a67b768694580a83d9fdd3c5161f6a Assembly-CSharp.dll:.CameraSwitch
 5c5541c980e7ea492d5d584ff04e1163 Assembly-CSharp.dll:UnityChan.CameraController
@@ -210,6 +215,8 @@ cb22aae4834244c9c8785a838a029ce1 Assembly-CSharp.dll:UnityStandardAssets.SceneUt
 d779870eb644317fc07a0875d13a59a4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Aeroplane.LandingGear
 486cd95c82d8305219c352c06b776e1f Cinemachine.dll:Cinemachine.CinemachinePipeline
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.MobileControlRig
+837ae46cae41da62999b1ed9b760f53b DOTween.dll:DG.Tweening.Core.DOTweenComponent
+3180a106f785e4a3ecd48418b3a15b55 DOTween.dll:DG.Tweening.Core.DOTweenSettings
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ObjectResetter
 16ce7edbc610086bae3b4704c4258247 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Effects.AfterburnerPhysicsForce
 01a8b95499bd0495f9f55080025c609a Assembly-CSharp.dll:.QuerySDEmotionalController
@@ -291,6 +298,8 @@ e033f131358cea5a0eabf9561e781deb UnityEngine.TestRunner.dll:UnityEngine.TestTool
 5e662ce00ebc5bdabf8eabe267788a5a Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.DynamicShadowSettings
 f323f056e5fad3139eb86276a7c8be38 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Aeroplane.JetParticleEffect
 a7b4360e6538def8fe50bee517e9815e Assembly-CSharp.dll:.Spawner
+317a95160f60eee259fb916f071b9f18 Assembly-CSharp.dll:.Menu
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.GameOverTextAnimator
 97f84abe5e126d5f291df183706f1db2 Assembly-CSharp.dll:UnityChan.IKCtrlRightHand
 b1665faa1f03d8ff9b1b1b0cdf32ecda Assembly-CSharp.dll:.MenuSceneLoader
 1dfc4d60914e7337a82796a42db50dd2 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SimpleActivatorMenu
@@ -301,6 +310,7 @@ c4028eb45f0635371827576e97a9284f Assembly-CSharp-firstpass.dll:UnityStandardAsse
 2cd2d2f846ad27548958d18b27d00839 Cinemachine.dll:Cinemachine.CinemachineBlenderSettings
 d17b1f1790ce13ac5f0fa6c48f4d0684 Assembly-CSharp.dll:TMPro.Examples.TMP_TextSelector_B
 03db02fc31e67250e25b7c5198f357d5 Cinemachine.dll:Cinemachine.CinemachineImpulseSource
+7a6d376c64d65ea8045fd004f53a7f65 Assembly-CSharp.dll:.MobItemDropper
 5f7f5d6a5e842d800db4f0fd8bbe1e14 Assembly-CSharp.dll:UnityStandardAssets.SceneUtils.PlaceTargetWithMouse
 d75dc834c5dec688db75a55a1724c90f UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 486cd95c82d8305219c352c06b776e1f UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput

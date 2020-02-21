@@ -96,6 +96,8 @@
           <e p="EnemyStatus.cs" t="Include" />
           <e p="GameOverTextAnimator.cs" t="Include" />
           <e p="Item.cs" t="Include" />
+          <e p="itemButton.cs" t="Include" />
+          <e p="ItemDialog.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
           <e p="MobAttack.cs" t="Include" />
           <e p="MobItemDropper.cs" t="Include" />
