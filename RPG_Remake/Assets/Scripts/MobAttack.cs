@@ -6,7 +6,8 @@ public class MobAttack : MonoBehaviour
 {
     [SerializeField] private float attackCooldown = 0.5f; 
     [SerializeField] private Collider attackCollider;
-
+    [SerializeField] private AudioSource swingSound; 
+    
     private MobStatus _status;
 
     private void Start()
@@ -29,8 +30,12 @@ public class MobAttack : MonoBehaviour
     public void OnAttackStart()
     {
         attackCollider.enabled = true;
+        
+        if (swingSound != null) {
+            swingSound.pitch = Random.Range(0.7f, 1.3f);
+            swingSound.Play();
+        }
     }
-
     public void OnHitAttack(Collider collider)
     {
         var targetMob = collider.GetComponent<MobStatus>();
@@ -48,6 +53,6 @@ public class MobAttack : MonoBehaviour
     private IEnumerator CooldownCoroutine()
     {
         yield return new WaitForSeconds(attackCooldown);
-        _status.GoToNormalStateIfPossible();
+        _status.GoToNormalStateIfPossible();        
     }
 }
