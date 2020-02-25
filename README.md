@@ -28,9 +28,10 @@ HPが0になるとゲームオーバーとなります。
 
 <改善点>
 1. 素材を使ってクラフト要素を追加したい
-2. スライムのスポーン位置がなぜかマップ端となっているため、改修が必要
+2. ~~スライムのスポーン位置がなぜかマップ端となっているため、改修が必要~~  
+(2/26改修) Navmesh AgentのObstacle Avoidanceコライダの値が大きすぎて、スライム同士がはじき返されていた
 ## Demo
-![RR](https://user-images.githubusercontent.com/59596135/75279438-f63b5b80-584e-11ea-97d4-d7fbf193f103.PNG)
+![RR2](https://user-images.githubusercontent.com/59596135/75289989-cdbd5c80-5862-11ea-9a40-97b4577e6208.PNG)
 ## Usage
 RPG_Remake.exeを開くと開始します。
 ## Licence
