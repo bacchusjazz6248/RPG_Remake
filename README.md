@@ -34,7 +34,7 @@ HPが0になるとゲームオーバーとなります。
 ## Usage
 RPG_Remake.exeを開くと開始します。
 ## Licence
-![query_logo](https://user-images.githubusercontent.com/59596135/75279657-46b2b900-584f-11ea-915d-820f5aed01b0.png)
+![query_logo](https://user-images.githubusercontent.com/59596135/75279657-46b2b900-584f-11ea-915d-820f5aed01b0.png)  
 [クエリちゃんライセンス規約](http://query-chan.com/download//)
 
 ## Author  
